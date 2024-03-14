@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NetFilx</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="my/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Netfilx.css">
+</head>
+<body>
+	<div id="home">
+		<div class="section">
+			<div class="container">			
+				<nav class="navbar navbar-expand-lg">
+					<a href="" id="logo"> <img src="img/netfilx.png"></a>
+					<ul class="navbar-nav m-auto">
+						<li class="navbar-item">
+							<a href="">Home</a>
+							<a href="">TV Shows</a>
+							<a href="">Movies</a>
+							<a href="">Latest</a>
+							<a href="">My List</a>
+						</li>
+					</ul>
+					<div class="Search">
+						<input type="text" placeholder =" Search">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+				</nav>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="mulan">
+							<h1>𝔇𝔦𝔰𝔫𝔢𝔭</h1>
+							<span2>𝓶𝓾𝓵𝓪𝓷</span2>
+							<div class="mulan1">
+								<span>2020</span>
+								<span3>12+</span3>
+								<span>In 55 min</span>
+								<span1>Action</span1>
+								<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,n
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<div class="button">
+									<button class="btn"><i class="fa-solid fa-play"></i>PLAY</button>
+									<button href="#" class="btn0"><i class="fa-solid fa-plus"></i>MY LIST</button>
+								</div>
+							</div>
+							<div class="play1">
+								<a class="play" onclick="toggleVideo();"><i class="fa-regular fa-circle-play"></i>Watch Trailer</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="trailer">
+				<video src="mulan.mp4" controls="true" autoplay="true"></video>
+				<i class="fa-solid fa-xmark" class="close" onclick="toggleVideo();"></i>
+			</div>
+		</div>
+	</div>
+
+<script>
+	function toggleVideo() {
+		const trailer = document.querySelector('.trailer');
+		trailer.classList.toggle('active')
+	}
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
